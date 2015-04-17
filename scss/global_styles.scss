@@ -1,0 +1,49 @@
+html,
+body {
+    font-size: 100%;
+		color: $blauw;
+	overflow-x: hidden;
+//  -webkit-overflow-scrolling: touch;
+     	-webkit-backface-visibility: hidden; // Addresses a small issue in webkit: http://bit.ly/NEdoDq
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+            opacity: 0.5;
+        }
+}
+ul {
+    padding: 0 0 12px 0;
+    margin: 4px 0;
+    display: inline-block;
+}
+ul li { 
+    list-style-type: none;
+}
+//ul li:before {
+// content: "\2013 \020 \020";
+// }
+
+ul li ul {
+    display: inline-block;
+    margin: 0 0 0 36px;
+    padding: 0;
+}
+ul li ul li {
+    width: 12px;
+    height: auto;
+    display: inline-block;
+    margin: -2px 2px 0 0;
+    padding: 0;
+    text-indent: -9999px;
+    background-image: url(/images/cross_bl.svg);
+    background-size: 12px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+}
+dl li {
+    list-style-type: none;   
+}
